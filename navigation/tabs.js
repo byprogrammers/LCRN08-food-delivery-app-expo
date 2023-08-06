@@ -101,17 +101,31 @@ const CustomTabBar = (props) => {
 const Tabs = () => {
     return (
         <Tab.Navigator
-            tabBarOptions={{
-                showLabel: false,
-                style: {
+            // tabBarOptions={{
+            //     showLabel: false,
+            //     style: {
+            //         position: 'absolute',
+            //         left: 0,
+            //         bottom: 0,
+            //         right: 0,
+            //         borderTopWidth: 0,
+            //         backgroundColor: "transparent",
+            //         elevation: 0
+            //     }
+            // }}
+            screenOptions={{
+                headerShown: false,
+                tabBarShowLabel: false,
+                tabBarStyle: {
                     position: 'absolute',
-                    left: 0,
                     bottom: 0,
+                    left: 0,
                     right: 0,
-                    borderTopWidth: 0,
+                    elevation: 0,
                     backgroundColor: "transparent",
-                    elevation: 0
-                }
+                    borderTopColor: "transparent",
+                    
+                }  
             }}
             tabBar={(props) => (
                 <CustomTabBar

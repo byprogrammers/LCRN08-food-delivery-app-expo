@@ -31,9 +31,9 @@ const App = () => {
                   screenOptions={{
                       headerShown: false
                   }}
-                  initialRouteName={'Home'}
+                  initialRouteName={'HomeTabs'}
               >
-                  <Stack.Screen name="Home" component={Tabs} />
+                  <Stack.Screen name="HomeTabs" component={Tabs} />
                   <Stack.Screen name="Restaurant" component={Restaurant} />
                   <Stack.Screen name="OrderDelivery" component={OrderDelivery} />
               </Stack.Navigator>
